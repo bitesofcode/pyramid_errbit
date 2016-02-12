@@ -1,2 +1,5 @@
 *.pyc
 pyramid_errbit.egg-info
+_version.py
+build
+dist
