@@ -5,7 +5,7 @@ import subprocess
 from setuptools import setup, find_packages, Command
 
 try:
-    with open('pyramid_orb/_version.py', 'r') as f:
+    with open('pyramid_errbit/_version.py', 'r') as f:
         content = f.read()
         major = re.search('__major__ = (\d+)', content).group(1)
         minor = re.search('__minor__ = (\d+)', content).group(1)
@@ -68,6 +68,6 @@ setup(
         'tag': tag
     },
     tests_require=[],
-    long_description='Bindings for the pyramid webframework and the ORB database ORM library.',
+    long_description='',
     classifiers=[],
 )
