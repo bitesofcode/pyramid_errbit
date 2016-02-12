@@ -63,10 +63,7 @@ setup(
     url='https://github.com/bitesofcode/pyramid_errbit',
     include_package_data=True,
     packages=find_packages(),
-    install_requires=[
-        'pyramid',
-        'errbit-reporter'
-    ],
+    install_requires=[],
     cmdclass={
         'tag': tag
     },
