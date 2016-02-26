@@ -1,12 +1,3 @@
-# define authorship information
-__authors__ = ['Eric Hulser']
-__author__ = ','.join(__authors__)
-__license__ = 'LGPL'
-
-# maintenance information
-__maintainer__ = 'Eric Hulser'
-__email__ = 'eric.hulser@gmail.com'
-
 # auto-generated version file from releasing
 try:
     from ._version import __major__, __minor__, __revision__, __hash__
