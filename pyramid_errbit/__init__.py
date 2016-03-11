@@ -44,6 +44,11 @@ def get_request_info(request):
     except StandardError:
         params = dict(request.params)
 
+    try:
+        session = dict(request.session)
+    except StandardError:
+        session = {}
+
     return {
         'exc_info': request.exc_info,
         'request_url': request.path_url,
@@ -51,7 +56,7 @@ def get_request_info(request):
         'action': request.method,
         'params': params,
         'cgi_data': dict(request.environ),
-        'session': dict(request.session)
+        'session': session
     }
 
 def is_error_ignored(exc_type):
